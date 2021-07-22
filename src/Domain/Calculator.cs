@@ -50,7 +50,7 @@ namespace TDDCalculator.Domain
 
         public int Multiple(string numbers)
         {
-            var delimiters = new char[] { ',', '\n' };
+            var delimiters = new char[] { ':', '\n' };
 
             var splitNumbers =
                 numbers
