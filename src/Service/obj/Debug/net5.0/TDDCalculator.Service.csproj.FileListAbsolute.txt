@@ -1,0 +1,15 @@
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\bin\Debug\net5.0\TDDCalculator.Service.deps.json
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\bin\Debug\net5.0\TDDCalculator.Service.dll
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\bin\Debug\net5.0\ref\TDDCalculator.Service.dll
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\bin\Debug\net5.0\TDDCalculator.Service.pdb
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\bin\Debug\net5.0\TDDCalculator.Domain.dll
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\bin\Debug\net5.0\TDDCalculator.Domain.pdb
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\obj\Debug\net5.0\TDDCalculator.Service.csproj.AssemblyReference.cache
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\obj\Debug\net5.0\TDDCalculator.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\obj\Debug\net5.0\TDDCalculator.Service.AssemblyInfoInputs.cache
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\obj\Debug\net5.0\TDDCalculator.Service.AssemblyInfo.cs
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\obj\Debug\net5.0\TDDCalculator.Service.csproj.CoreCompileInputs.cache
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\obj\Debug\net5.0\TDDCalculator.Service.csproj.CopyComplete
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\obj\Debug\net5.0\TDDCalculator.Service.dll
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\obj\Debug\net5.0\ref\TDDCalculator.Service.dll
+C:\Users\hamid\source\repos\tdd-calculator\src\Service\obj\Debug\net5.0\TDDCalculator.Service.pdb
