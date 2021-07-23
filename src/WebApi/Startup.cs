@@ -29,6 +29,10 @@ namespace TDDCalculator.WebApi
             services.AddControllers();
 
             services.AddScoped<ICalculatorService, CalculatorService>();
+            
+            services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()));
 
             services.AddSwaggerGen(c =>
             {
@@ -45,6 +49,8 @@ namespace TDDCalculator.WebApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TDDCalculator.WebApi v1"));
             }
+            
+            app.UseCors("AllowAll");
 
             app.UseMiddleware<ExceptionMiddleware>();
 

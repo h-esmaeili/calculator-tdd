@@ -28,7 +28,7 @@ namespace TDDCalculator.Service
             var calc = new Calculator();
             _logger.LogDebug("Request of subtract, request = {@calculation}", calculation);
 
-            var result = calc.Multiple(calculation);
+            var result = calc.Subtract(calculation);
             _logger.LogDebug("Result of request {@result}", result);
 
             return result;

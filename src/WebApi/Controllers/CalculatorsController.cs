@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using TDDCalculator.Domain;
+using TDDCalculator.WebApi.Models;
 
 namespace TDDCalculator.WebApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class CalculatorsController : ControllerBase
     {
         private readonly ICalculatorService _calculatorService;
@@ -22,9 +23,9 @@ namespace TDDCalculator.WebApi.Controllers
         /// Takes two or more parameters and returns the sum of all the numbers
         /// </summary>
         [HttpPost("Add")]
-        public int Add(string calculation)
+        public int Add([FromBody] AddRequest request)
         {
-            var result = _calculatorService.Add(calculation);
+            var result = _calculatorService.Add(request.Calculation);
 
             return result;
         }
@@ -33,9 +34,9 @@ namespace TDDCalculator.WebApi.Controllers
         /// Takes two or more parameters and returns the subtraction of the numbers
         /// </summary>
         [HttpPost("Subtract")]
-        public int Subtract(string calculation)
+        public int Subtract([FromBody]SubtractRequest request)
         {
-            int result = _calculatorService.Subtract(calculation);
+            int result = _calculatorService.Subtract(request.Calculation);
             
             return result;
         }
@@ -44,9 +45,9 @@ namespace TDDCalculator.WebApi.Controllers
         /// Takes two or more parameters and returns the multiplication
         /// </summary>
         [HttpPost("Multiply")]
-        public int Multiply(string calculation)
+        public int Multiply([FromBody] MultiplyRequest request)
         {
-            int result = _calculatorService.Multiply(calculation);
+            int result = _calculatorService.Multiply(request.Calculation);
 
             return result;
         }
@@ -55,9 +56,9 @@ namespace TDDCalculator.WebApi.Controllers
         /// Takes two parameters and returns the division
         /// </summary>
         [HttpPost("Divide")]
-        public int Divide(int param1, int param2)
+        public int Divide([FromBody] DivideRequest request)
         {
-            var result = _calculatorService.Divide(param1, param2);
+            var result = _calculatorService.Divide(request.Param1, request.Param2);
 
             return result;
         }
@@ -66,9 +67,9 @@ namespace TDDCalculator.WebApi.Controllers
         /// Takes two parameters and return the split of param1, param2 times
         /// </summary>
         [HttpPost("SplitEq")]
-        public string SplitEq(int param1, int param2)
+        public string SplitEq([FromBody] SplitEqRequest request)
         {
-            var result = _calculatorService.SplitEq(param1, param2);
+            var result = _calculatorService.SplitEq(request.Param1, request.Param2);
 
             return result;
         }
@@ -77,9 +78,9 @@ namespace TDDCalculator.WebApi.Controllers
         /// Takes two or more parameters and returns the remainder
         /// </summary>
         [HttpPost("SplitNum")]
-        public int SplitNum(string calculation)
+        public int SplitNum([FromBody] SplitNumRequest request)
         {
-            var result = _calculatorService.SplitNum(calculation);
+            var result = _calculatorService.SplitNum(request.Calculation);
 
             return result;
         }

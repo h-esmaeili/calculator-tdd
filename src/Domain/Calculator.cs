@@ -11,7 +11,7 @@ namespace TDDCalculator.Domain
         }
         public int Add(string numbers)
         {
-            var delimiters = new char[] { ',', '\n' };
+            var delimiters = new char[] { '+', ',', '\n' };
 
             var splitNumbers =
                 numbers
@@ -28,7 +28,7 @@ namespace TDDCalculator.Domain
 
         public int Subtract(string numbers)
         {
-            var delimiters = new char[] { ',', '\n' };
+            var delimiters = new char[] { '-', ',', '\n' };
 
             var splitNumbers =
                 numbers
@@ -50,7 +50,7 @@ namespace TDDCalculator.Domain
 
         public int Multiple(string numbers)
         {
-            var delimiters = new char[] { ',', '\n' };
+            var delimiters = new char[] { '*', ',', '\n' };
 
             var splitNumbers =
                 numbers
@@ -101,7 +101,7 @@ namespace TDDCalculator.Domain
 
         public int SplitNum(string numbers)
         {
-            var delimiters = new char[] { ',', '\n' };
+            string[] delimiters = new string[] { "SN", ",", "\n" };
 
             var splitNumbers =
                 numbers
