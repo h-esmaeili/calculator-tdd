@@ -23,7 +23,7 @@ namespace TDDCalculator.WebApi.Controllers
         /// Takes two or more parameters and returns the sum of all the numbers
         /// </summary>
         [HttpPost("Add")]
-        public int Add([FromBody] AddRequest request)
+        public float Add([FromBody] AddRequest request)
         {
             var result = _calculatorService.Add(request.Calculation);
 
@@ -34,9 +34,9 @@ namespace TDDCalculator.WebApi.Controllers
         /// Takes two or more parameters and returns the subtraction of the numbers
         /// </summary>
         [HttpPost("Subtract")]
-        public int Subtract([FromBody]SubtractRequest request)
+        public float Subtract([FromBody]SubtractRequest request)
         {
-            int result = _calculatorService.Subtract(request.Calculation);
+            var result = _calculatorService.Subtract(request.Calculation);
             
             return result;
         }
@@ -45,9 +45,9 @@ namespace TDDCalculator.WebApi.Controllers
         /// Takes two or more parameters and returns the multiplication
         /// </summary>
         [HttpPost("Multiply")]
-        public int Multiply([FromBody] MultiplyRequest request)
+        public float Multiply([FromBody] MultiplyRequest request)
         {
-            int result = _calculatorService.Multiply(request.Calculation);
+            var result = _calculatorService.Multiply(request.Calculation);
 
             return result;
         }
@@ -56,7 +56,7 @@ namespace TDDCalculator.WebApi.Controllers
         /// Takes two parameters and returns the division
         /// </summary>
         [HttpPost("Divide")]
-        public int Divide([FromBody] DivideRequest request)
+        public float Divide([FromBody] DivideRequest request)
         {
             var result = _calculatorService.Divide(request.Param1, request.Param2);
 
@@ -78,7 +78,7 @@ namespace TDDCalculator.WebApi.Controllers
         /// Takes two or more parameters and returns the remainder
         /// </summary>
         [HttpPost("SplitNum")]
-        public int SplitNum([FromBody] SplitNumRequest request)
+        public float SplitNum([FromBody] SplitNumRequest request)
         {
             var result = _calculatorService.SplitNum(request.Calculation);
 

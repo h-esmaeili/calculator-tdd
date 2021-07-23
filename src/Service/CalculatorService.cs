@@ -12,7 +12,7 @@ namespace TDDCalculator.Service
             _logger = logger;
         }
 
-        public int Add(string calculation)
+        public float Add(string calculation)
         {
             var calc = new Calculator();
             _logger.LogDebug("Request of add, request = {@calculation}", calculation);
@@ -23,7 +23,7 @@ namespace TDDCalculator.Service
             return result;
         }
 
-        public int Subtract(string calculation)
+        public float Subtract(string calculation)
         {
             var calc = new Calculator();
             _logger.LogDebug("Request of subtract, request = {@calculation}", calculation);
@@ -34,7 +34,7 @@ namespace TDDCalculator.Service
             return result;
         }
 
-        public int Multiply(string calculation)
+        public float Multiply(string calculation)
         {
             var calc = new Calculator();
             _logger.LogDebug("Request of multiply, request = {@calculation}", calculation);
@@ -45,7 +45,7 @@ namespace TDDCalculator.Service
             return result;
         }
 
-        public int Divide(int param1, int param2)
+        public float Divide(float param1, float param2)
         {
             var calc = new Calculator();
             _logger.LogDebug("Request of divide, request = {@param1}, {@param2}", param1, param2);
@@ -56,7 +56,7 @@ namespace TDDCalculator.Service
             return result;
         }
 
-        public string SplitEq(int param1, int param2)
+        public string SplitEq(float param1, float param2)
         {
             var calc = new Calculator();
             _logger.LogDebug("Request of splitEq, request = {@param1}, {@param2}", param1, param2);
@@ -67,7 +67,7 @@ namespace TDDCalculator.Service
             return result;
         }
 
-        public int SplitNum(string calculation)
+        public float SplitNum(string calculation)
         {
             var calc = new Calculator();
             _logger.LogDebug("Request of splitNum, request = {@calculation}", calculation);

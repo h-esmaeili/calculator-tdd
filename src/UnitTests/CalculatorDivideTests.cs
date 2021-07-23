@@ -8,8 +8,9 @@ namespace TDDCalculator.UnitTests
     {
 
         [Theory]
-        [InlineData(1, 2, 0)]
-        public void Divide_DivideTwoNumber_WhenStringIsValid(int param1, int param2, int expected)
+        [InlineData(1, 2, 0.5)]
+        [InlineData(1.5, 2, 0.75)]
+        public void Divide_DivideTwoNumber_WhenStringIsValid(float param1, float param2, float expected)
         {
             //Arrange
             var calc = new Calculator();
@@ -23,7 +24,7 @@ namespace TDDCalculator.UnitTests
 
         [Theory]
         [InlineData(1, 0, 0)]
-        public void Divide_ShouldThrowAnException_WhenZeroNumberAreUsed(int param1, int param2, int expected)
+        public void Divide_ShouldThrowAnException_WhenZeroNumberAreUsed(float param1, float param2, float expected)
         {
             //Arrange
             var calc = new Calculator();

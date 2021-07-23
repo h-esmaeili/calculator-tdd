@@ -10,7 +10,7 @@ namespace TDDCalculator.UnitTests
         [Theory]
         [InlineData(10, 2, "{5, 5}")]
         [InlineData(120, 4, "{30, 30, 30, 30}")]
-        public void SplitEq_SplitEqTwoNumber_WhenStringIsValid(int param1, int param2, string expected)
+        public void SplitEq_SplitEqTwoNumber_WhenStringIsValid(float param1, float param2, string expected)
         {
             //Arrange
             var calc = new Calculator();

@@ -3,11 +3,11 @@ namespace TDDCalculator.Domain
 {
     public interface ICalculatorService
     {
-        int Add(string calculation);
-        int Subtract(string calculation);
-        int Multiply(string calculation);
-        int Divide(int param1, int param2);
-        string SplitEq(int param1, int param2);
-        int SplitNum(string calculation);
+        float Add(string calculation);
+        float Subtract(string calculation);
+        float Multiply(string calculation);
+        float Divide(float param1, float param2);
+        string SplitEq(float param1, float param2);
+        float SplitNum(string calculation);
     }
 }

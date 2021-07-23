@@ -8,8 +8,8 @@ namespace TDDCalculator.UnitTests
         [Theory]
         [InlineData("", 0)]
         [InlineData("1", 1)]
-        [InlineData("3,2", 6)]
-        public void Multiple_MultipleTwoNumbers_WhenStringIsValid(string calculation, int expected)
+        [InlineData("1.5,2", 3)]
+        public void Multiple_MultipleTwoNumbers_WhenStringIsValid(string calculation, float expected)
         {
             //Arrange
             var calc = new Calculator();
@@ -25,7 +25,7 @@ namespace TDDCalculator.UnitTests
         [Theory]
         [InlineData("1,2,3", 6)]
         [InlineData("10,2,3,2", 120)]
-        public void Multiple_MultipleAnyNumbers_WhenStringIsValid(string calculation, int expected)
+        public void Multiple_MultipleAnyNumbers_WhenStringIsValid(string calculation, float expected)
         {
             //Arrange
             var calc = new Calculator();
@@ -40,7 +40,7 @@ namespace TDDCalculator.UnitTests
         [Theory]
         [InlineData("1\n2,3", 6)]
         [InlineData("5\n2,10\n5, 10", 5000)]
-        public void Multiple_MultipleUsingNewLineDelimiter_WhenStringIsValid(string calculation, int expected)
+        public void Multiple_MultipleUsingNewLineDelimiter_WhenStringIsValid(string calculation, float expected)
         {
             //Arrange
             var calc = new Calculator();
@@ -55,7 +55,7 @@ namespace TDDCalculator.UnitTests
         [Theory]
         [InlineData("1,2,3", 6)]
         [InlineData("5*2*10*5*10", 5000)]
-        public void Multiple_MultipleUsingSignDelimiter_WhenStringIsValid(string calculation, int expected)
+        public void Multiple_MultipleUsingSignDelimiter_WhenStringIsValid(string calculation, float expected)
         {
             //Arrange
             var calc = new Calculator();
