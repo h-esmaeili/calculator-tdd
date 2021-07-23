@@ -35,7 +35,7 @@ The source folder contains several separate projects:
 - Domain (Class Library)
 - Unit Tests (xUnit)
 - WPF Client (Net Core 5)
-- Web Client (Vue)
+- Web Client (Vue Material)
 
 I used the TDD approach for implementing the backend side.
 For automation of the process of the build, I used Azure pipelines integrated with the GitHub repository.

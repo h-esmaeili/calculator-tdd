@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NiuGBtMxMITU1aKLJJGPHvHIZUaLu9opsdGfH5qApxNzLG3vEOrLWqdls1NIdSafCfscJfHK6/EPQq8eRasB5Q==",
+  "dgSpecHash": "zMsw9RDqcU50n0iRvSo/L2I8fRVCgXgssivP+ehUbSZ/6kpiV82H0LkZ1A9LntjO5oY5lgwca94Bdpqin7ooiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj",
+  "projectFilePath": "D:\\Project\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

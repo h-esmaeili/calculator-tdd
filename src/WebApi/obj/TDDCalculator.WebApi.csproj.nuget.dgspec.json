@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\WebApi\\TDDCalculator.WebApi.csproj": {}
+    "D:\\Project\\tdd-calculator\\src\\WebApi\\TDDCalculator.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj": {
+    "D:\\Project\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj",
+        "projectUniqueName": "D:\\Project\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj",
         "projectName": "TDDCalculator.Domain",
-        "projectPath": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj",
+        "projectPath": "D:\\Project\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj",
         "packagesPath": "C:\\Users\\hamid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Domain\\obj\\",
+        "outputPath": "D:\\Project\\tdd-calculator\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Service\\TDDCalculator.Service.csproj": {
+    "D:\\Project\\tdd-calculator\\src\\Service\\TDDCalculator.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Service\\TDDCalculator.Service.csproj",
+        "projectUniqueName": "D:\\Project\\tdd-calculator\\src\\Service\\TDDCalculator.Service.csproj",
         "projectName": "TDDCalculator.Service",
-        "projectPath": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Service\\TDDCalculator.Service.csproj",
+        "projectPath": "D:\\Project\\tdd-calculator\\src\\Service\\TDDCalculator.Service.csproj",
         "packagesPath": "C:\\Users\\hamid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Service\\obj\\",
+        "outputPath": "D:\\Project\\tdd-calculator\\src\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -88,8 +88,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj": {
-                "projectPath": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj"
+              "D:\\Project\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj": {
+                "projectPath": "D:\\Project\\tdd-calculator\\src\\Domain\\TDDCalculator.Domain.csproj"
               }
             }
           }
@@ -128,14 +128,14 @@
         }
       }
     },
-    "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\WebApi\\TDDCalculator.WebApi.csproj": {
+    "D:\\Project\\tdd-calculator\\src\\WebApi\\TDDCalculator.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\WebApi\\TDDCalculator.WebApi.csproj",
+        "projectUniqueName": "D:\\Project\\tdd-calculator\\src\\WebApi\\TDDCalculator.WebApi.csproj",
         "projectName": "TDDCalculator.WebApi",
-        "projectPath": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\WebApi\\TDDCalculator.WebApi.csproj",
+        "projectPath": "D:\\Project\\tdd-calculator\\src\\WebApi\\TDDCalculator.WebApi.csproj",
         "packagesPath": "C:\\Users\\hamid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\WebApi\\obj\\",
+        "outputPath": "D:\\Project\\tdd-calculator\\src\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -155,8 +155,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Service\\TDDCalculator.Service.csproj": {
-                "projectPath": "C:\\Users\\hamid\\source\\repos\\tdd-calculator\\src\\Service\\TDDCalculator.Service.csproj"
+              "D:\\Project\\tdd-calculator\\src\\Service\\TDDCalculator.Service.csproj": {
+                "projectPath": "D:\\Project\\tdd-calculator\\src\\Service\\TDDCalculator.Service.csproj"
               }
             }
           }
