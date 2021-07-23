@@ -34,4 +34,3 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    projects: 'calculator.sln'
