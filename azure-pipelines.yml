@@ -10,12 +10,15 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/calculator.sln'
+  solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
 steps:
 - task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: 
+    checkLatest: true
 
 - task: NuGetCommand@2
   inputs:
