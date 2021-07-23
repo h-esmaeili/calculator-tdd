@@ -3,35 +3,35 @@ using Xunit;
 
 namespace TDDCalculator.UnitTests
 {
-    public class CalculatorSubtractTests
+    public class CalculatorSplitNumTests
     {
 
         [Theory]
         [InlineData("", 0)]
         [InlineData("1", 1)]
-        [InlineData("3,2", 1)]
-        public void Subtract_SubtractTwoNumbers_WhenStringIsValid(string calculation, int expected)
+        [InlineData("10,2", 8)]
+        public void SplitNum_SplitNumTwoNumbers_WhenStringIsValid(string calculation, int expected)
         {
             //Arrange
             var calc = new Calculator();
 
             // Act
-            var result = calc.Subtract(calculation);
+            var result = calc.SplitNum(calculation);
 
             //Assert
             Assert.Equal(expected, result);
         }
 
         [Theory]
-        [InlineData("6,1,1", 4)]
-        [InlineData("10,2,3,5", 0)]
-        public void Subtract_SubtractAnyNumbers_WhenStringIsValid(string calculation, int expected)
+        [InlineData("60,15,10", 35)]
+        [InlineData("140,45,35,20", 40)]
+        public void SplitNum_SplitNumAnyNumbers_WhenStringIsValid(string calculation, int expected)
         {
             //Arrange
             var calc = new Calculator();
 
             //Act
-            var result = calc.Subtract(calculation);
+            var result = calc.SplitNum(calculation);
 
             //Assert
             Assert.Equal(expected, result);
@@ -40,28 +40,28 @@ namespace TDDCalculator.UnitTests
         [Theory]
         [InlineData("8\n2,3", 3)]
         [InlineData("20\n2,3\n5, 5", 5)]
-        public void Subtract_SubtractUsingNewLineDelimiter_WhenStringIsValid(string calculation, int expected)
+        public void SplitNum_SplitNumUsingNewLineDelimiter_WhenStringIsValid(string calculation, int expected)
         {
             //Arrange
             var calc = new Calculator();
 
             //Act
-            var result = calc.Subtract(calculation);
+            var result = calc.SplitNum(calculation);
 
             //Assert
             Assert.Equal(expected, result);
         }
 
         [Theory]
-        [InlineData("8-2-3", 3)]
-        [InlineData("20-2-3-5-5", 5)]
-        public void Subtract_SubtractUsingMinusDelimiter_WhenStringIsValid(string calculation, int expected)
+        [InlineData("8 SN 2 SN 3", 3)]
+        [InlineData("140 SN 45 SN 35 SN 20", 40)]
+        public void SplitNum_SplitNumUsingSNDelimiter_WhenStringIsValid(string calculation, int expected)
         {
             //Arrange
             var calc = new Calculator();
 
             //Act
-            var result = calc.Subtract(calculation);
+            var result = calc.SplitNum(calculation);
 
             //Assert
             Assert.Equal(expected, result);

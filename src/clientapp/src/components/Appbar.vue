@@ -17,24 +17,6 @@
             <md-icon>home</md-icon>
             <span class="md-list-item-text">Home</span>
           </md-list-item>
-          <md-list-item to="/about" v-on:click="onMenuClicked('Home')">
-            <md-icon>add</md-icon>
-            <span class="md-list-item-text">Add</span>
-          </md-list-item>
-          <md-list-item to="/Subtract">
-            <md-icon>remove</md-icon>
-            <span class="md-list-item-text">Subtract</span>
-          </md-list-item>
-
-          <md-list-item to="/Multiply">
-            <md-icon>close</md-icon>
-            <span class="md-list-item-text">Multiply</span>
-          </md-list-item>
-
-          <md-list-item to="/Divide">
-            <md-icon>error</md-icon>
-            <span class="md-list-item-text">Divide</span>
-          </md-list-item>
         </md-list>
       </md-app-drawer>
 

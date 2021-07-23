@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const service = axios.create({
-    baseURL: "https://localhost:44344",//process.env.VUE_APP_BASE_API, // api base_url
+    baseURL: "https://localhost:44344", // api base_url
     timeout: 50000, // timeout,
     headers: { 'Access-Control-Allow-Origin': '*' },
 });

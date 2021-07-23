@@ -26,7 +26,7 @@ namespace TDDCalculator.UnitTests
 
         [Theory]
         [InlineData("1,2,3", 6)]
-        [InlineData("1, 2, 3, 5", 11)]
+        [InlineData("1,2,3,5", 11)]
         public void Add_AddAnyNumbers_WhenStringIsValid(string calculation, int expected)
         {
             //Arrange
@@ -41,8 +41,23 @@ namespace TDDCalculator.UnitTests
 
         [Theory]
         [InlineData("1\n2,3", 6)]
-        [InlineData("1\n2, 3\n 5, 10", 21)]
+        [InlineData("1\n2,3\n5,10", 21)]
         public void Add_AddUsingNewLineDelimiter_WhenStringIsValid(string calculation, int expected)
+        {
+            //Arrange
+            var calc = new Calculator();
+
+            //Act
+            var result = calc.Add(calculation);
+
+            //Assert
+            Assert.Equal(expected, result);
+        }
+
+        [Theory]
+        [InlineData("1+2+3", 6)]
+        [InlineData("1+2+3+5+10", 21)]
+        public void Add_AddUsingPlusDelimiter_WhenStringIsValid(string calculation, int expected)
         {
             //Arrange
             var calc = new Calculator();
