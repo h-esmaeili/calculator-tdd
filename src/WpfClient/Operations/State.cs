@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calculator.Wpf.Operations
+namespace TDDCalculator.WpfClient.Operations
 {
     using Processor = Func<float, float, string>;
 

@@ -1,5 +1,5 @@
 ﻿
-namespace Calculator.Wpf.ServiceAgent
+namespace TDDCalculator.WpfClient.ServiceAgent
 {
     public interface ICalcServiceAgent
     {

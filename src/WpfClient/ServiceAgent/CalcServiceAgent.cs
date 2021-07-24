@@ -1,11 +1,11 @@
-﻿using Calculator.Wpf.Http;
+﻿using TDDCalculator.WpfClient.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
 
-namespace Calculator.Wpf.ServiceAgent
+namespace TDDCalculator.WpfClient.ServiceAgent
 {
     public sealed class CalcServiceAgent : ICalcServiceAgent
     {

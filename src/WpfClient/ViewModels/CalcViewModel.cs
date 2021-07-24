@@ -4,9 +4,9 @@ using System.Linq;
 using System.Windows.Controls;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
-using Calculator.Wpf.Operations;
+using TDDCalculator.WpfClient.Operations;
 
-namespace Calculator.Wpf.ViewModels
+namespace TDDCalculator.WpfClient.ViewModels
 {
     public sealed class CalcViewModel : INotifyPropertyChanged
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace Calculator.Wpf.Operations
+namespace TDDCalculator.WpfClient.Operations
 {
     public class OperationCalcSubtract : OperationCalc
     {

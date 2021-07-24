@@ -1,7 +1,7 @@
-﻿using Calculator.Wpf.ServiceAgent;
+﻿using TDDCalculator.WpfClient.ServiceAgent;
 using System;
 
-namespace Calculator.Wpf.Operations
+namespace TDDCalculator.WpfClient.Operations
 {
     using Processor = Func<float, float, string>;
     public abstract class OperationCalc : IOperation

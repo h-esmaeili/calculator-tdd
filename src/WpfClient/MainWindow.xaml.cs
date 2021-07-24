@@ -1,8 +1,8 @@
-﻿using Calculator.Wpf.Operations;
-using Calculator.Wpf.ViewModels;
+﻿using TDDCalculator.WpfClient.Operations;
+using TDDCalculator.WpfClient.ViewModels;
 using System.Windows;
 
-namespace Calculator.Wpf
+namespace TDDCalculator.WpfClient
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

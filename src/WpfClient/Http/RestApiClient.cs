@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator.Wpf.Http
+namespace TDDCalculator.WpfClient.Http
 {
     public sealed class RestApiClient: HttpClient
     {
