@@ -3,7 +3,7 @@ namespace TDDCalculator.WpfClient.Operations
 {
     public class OperationCalcEquals : IOperation
     {
-        public State? Apply(State state)
+        public State Apply(State state)
         {
             if (state.Accumulator == null) { return null; }
             if (state.Processor == null) { return null; }

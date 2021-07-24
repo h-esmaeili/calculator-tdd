@@ -11,7 +11,7 @@ namespace TDDCalculator.WpfClient.ViewModels
     public sealed class CalcViewModel : INotifyPropertyChanged
     {
         ObservableCollection<State> States { get; set; }
-        public String Text => CurrentState.Text ?? "";
+        public string Text => CurrentState.Text ?? "";
 
         static Dictionary<System.Windows.Input.Key, Func<IOperation>> _KeyMapping;
 
@@ -63,7 +63,7 @@ namespace TDDCalculator.WpfClient.ViewModels
 
         public void KeyCodeEnterred(System.Windows.Input.Key key)
         {
-            IOperation? newOperation = _KeyMapping.ContainsKey(key) ? _KeyMapping[key]() : null;
+            IOperation newOperation = _KeyMapping.ContainsKey(key) ? _KeyMapping[key]() : null;
 
             if (newOperation != null)
             {
@@ -73,10 +73,9 @@ namespace TDDCalculator.WpfClient.ViewModels
 
         public void AddOperation(IOperation op)
         {
-            State? newState = op.Apply(CurrentState);
-            if (newState == null) { return; }
-
-            States.Add(newState.Value);
+            State newState = op.Apply(CurrentState);
+            
+            States.Add(newState);
         }
 
         public void RemoveLastOperation()
@@ -90,7 +89,7 @@ namespace TDDCalculator.WpfClient.ViewModels
 
         #region INotifyPropertyChanged Members  
 
-        public event PropertyChangedEventHandler? PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string propertyName)
         {
             if (propertyName == null) { return; }

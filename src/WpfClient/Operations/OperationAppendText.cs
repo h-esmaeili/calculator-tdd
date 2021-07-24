@@ -10,7 +10,7 @@ namespace TDDCalculator.WpfClient.Operations
             this.Text = text;
         }
 
-        public State? Apply(State state)
+        public State Apply(State state)
         {
             /* remove 0 if that is what is being displayed */
             string prependText = state.Text;

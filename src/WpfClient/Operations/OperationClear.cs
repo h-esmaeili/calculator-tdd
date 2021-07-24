@@ -3,7 +3,7 @@ namespace TDDCalculator.WpfClient.Operations
 {
     public class OperationClear : IOperation
     {
-        public State? Apply(State state)
+        public State Apply(State state)
         {
             bool _IsClear(State state)
             {

@@ -12,10 +12,10 @@ namespace TDDCalculator.WpfClient.Operations
         {
             CalcServiceAgent = new CalcServiceAgent();
         }
-        public State? Apply(State state)
+        public State Apply(State state)
         {
             if (state.Text.Length == 0) { return null; }
-            State? newState = new OperationCalcEquals().Apply(state);
+            State newState = new OperationCalcEquals().Apply(state);
 
             if (newState == null)
             {
